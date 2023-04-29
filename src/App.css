@@ -1,11 +1,12 @@
+
 body{
-  background-color: #fafafa;
+  background-color: hsl(226, 49%, 88%);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   align-content: center;
-  height: 1000vh;
+  height: 50vh;
 }
 
 .box{
