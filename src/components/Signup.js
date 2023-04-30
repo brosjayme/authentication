@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { Form } from 'react-bootstrap';
+import { Alert, Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap'
 import { useUserAuth } from '../context/UserAuthContext';
 
@@ -22,6 +22,7 @@ const Signup = () => {
     <>
     <div className='p-4 box'>
         <h2 className='mb-3'>Form Auth Signup</h2>
+        {error && <Alert variant='danger'>{error}</Alert>}
         <Form onSubmit= {handlesubmit}>
             <Form.Group className='mb-3' controlId='formBasicEmail'>
               <Form.Control type='email' placeholder='Email address'
