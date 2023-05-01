@@ -1,13 +1,12 @@
 import React from 'react'
 import {Routes, Route} from 'react-router-dom';
-import './App.css'
 import Login from './components/Login'
 import { Container, Row, Col} from 'react-bootstrap';
 import Signup from './components/Signup';
 import Home from './components/Home';
 import ProtectedRoute from './components/ProtectedRoute'
 import { UserAuthContextProvider } from './context/UserAuthContext';
-
+import './App.css'
 
 function App () {
   return (
