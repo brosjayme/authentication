@@ -1,9 +1,12 @@
 import React from 'react'
+import { Navigate } from 'react-router-dom';
 
-const ProtectedRoute = () => {
-  return (
-    <div></div>
-  )
+const ProtectedRoute = ({childern}) => {
+let auth = 'true';
+if(!auth){
+ return <Navigate to='/' />
 }
 
-export default ProtectedRoute
+  return childern; 
+};
+export default ProtectedRoute;
