@@ -7,6 +7,7 @@ import Home from './components/Home';
 import ProtectedRoute from './components/ProtectedRoute'
 import { UserAuthContextProvider } from './context/UserAuthContext';
 import './App.css'
+import PhoneSignUp from './components/PhoneSignUp';
 
 function App () {
   return (
@@ -23,7 +24,9 @@ function App () {
       } 
       />
         <Route path='/' element={<Login/>} />
+        <Route path='phonesignup' element={<PhoneSignUp/>} />
         <Route path='signup' element={<Signup/>} />
+
       </Routes>
       </UserAuthContextProvider>
       </Col>
